@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AC Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Nala Aircon Management System</h1>
+  </header>
+  <main>
+    <form id="acForm">
+      <h2>Kost Makassar Residence</h2>
+      <label for="office">Tata Letak</label>
+      <select id="office" name="office" required>
+        <option value="">Pilih Lokasi</option>
+        <option>Kost Makassar Residence</option>
+        
+      </select>
+
+      <label for="unit">Titik GPS</label>
+      <textarea id="unit" name="unit" placeholder="Masukkan koordinat GPS (lat,long)" required></textarea>
+
+      <label for="address">Alamat</label>
+      <textarea id="address" name="address" placeholder="Masukkan alamat" required></textarea>
+
+      <button type="submit">Tambah Data</button>
+    </form>
+
+    <section id="summary">
+      <h2>Database Unit AC Kost Makassar Residence</h2>
+      <input type="text" id="search" placeholder="Cari data...">
+
+      <table>
+        <thead>
+          <tr>
+            <th>Kantor</th>
+            <th>Titik GPS</th> <!-- Ubah kolom menjadi Titik GPS -->
+            <th>Alamat</th>
+            <th>Aksi</th>
+          </tr>
+        </thead>
+        <tbody id="summaryBody">
+          <!-- Baris data akan dirender secara dinamis oleh script.js -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <!-- Template untuk Detail -->
+  <template id="detailTemplate">
+    <tr class="details-row">
+      <td colspan="4">
+        <form class="detail-form">
+          <label>Model AC</label>
+          <input type="text" class="model-input" placeholder="Masukkan Model AC" />
+
+          <label>Kapasitas AC</label>
+          <input type="text" class="capacity-input" placeholder="Masukkan Kapasitas AC" />
+
+          <label>Titik GPS</label>
+          <input type="text" class="gps-input" placeholder="Masukkan Titik GPS" />
+
+          <label>Alamat</label>
+          <textarea class="address-input" placeholder="Masukkan Alamat"></textarea>
+
+          <button type="button" class="save-btn">Save</button>
+          <button type="button" class="edit-btn">Edit</button>
+        </form>
+      </td>
+    </tr>
+  </template>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>

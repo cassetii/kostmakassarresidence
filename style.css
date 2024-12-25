@@ -1,0 +1,139 @@
+/* Color Palette */
+:root {
+    --primary-green: #355c7d;
+    --dark-blue: #c06c84;
+    --accent-blue: #6c5b7b;
+    --white: #ffffff;
+    --light-gray: #f4f4f4;
+    --gray: #dddddd;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--light-gray);
+  }
+  
+  header {
+    background-color: var(--dark-blue);
+    color: var(--white);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+    color: var(--primary-green);
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  form {
+    background-color: var(--white);
+    padding: 20px;
+    border: 1px solid var(--gray);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  form h2 {
+    color: var(--dark-blue);
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: var(--dark-blue);
+  }
+  
+  input, textarea, select, button {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid var(--gray);
+    border-radius: 5px;
+  }
+  
+  input:focus, textarea:focus, select:focus {
+    outline: none;
+    border-color: var(--primary-green);
+    box-shadow: 0 0 5px rgba(138, 192, 30, 0.5);
+  }
+  
+  button {
+    background-color: var(--primary-green);
+    color: var(--white);
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: var(--dark-blue);
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: var(--white);
+    border: 1px solid var(--gray);
+  }
+  
+  th, td {
+    border: 1px solid var(--gray);
+    padding: 10px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: var(--accent-blue);
+    color: var(--white);
+  }
+  
+  input#search {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid var(--gray);
+    width: 100%;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+  }
+  
+  input#search:focus {
+    border-color: var(--primary-green);
+    box-shadow: 0 0 5px rgba(138, 192, 30, 0.5);
+  }
+  
+  .details-row td {
+    background-color: var(--light-gray);
+    padding: 10px;
+}
+
+.details-row form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.details-row form label {
+    font-weight: bold;
+}
+
+.details-row form input,
+.details-row form textarea,
+.details-row form button {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid var(--gray);
+    border-radius: 5px;
+}
+
+
